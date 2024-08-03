@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <nav>
+        <div class="logo">Logo</div>
+        <div class="hamburger-menu" onclick="toggleMenu()">
+          <span class="hamburger"></span>
+          <span class="hamburger"></span>
+          <span class="hamburger"></span>
+        </div>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="close-menu" onclick="toggleMenu()">
+          <span class="close-symbol">&times;</span>
+        </div>
+      </nav>
+      <h2>"Welcome to our vibrant learning community, where curiosity meets growth and everyone thrives together!"</h2>
+      <script>
+        function toggleMenu() {
+  const navLinks = document.getElementById('nav-links');
+  const closeMenu = document.querySelector('.close-menu');
+  if (navLinks.style.display === 'none') {
+    navLinks.style.display = 'block';
+    closeMenu.style.display = 'block';
+  } else {
+    navLinks.style.display = 'none';
+    closeMenu.style.display = 'none';
+  }
+}
+
+      </script>
+    
+</body>
+</html>
